@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Amaury Henrottay" />
+    <meta name="description" content="série d'exercice sur Bootstrap" />
+    <meta name="keywords" content="Bootstrap" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/rocket.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div class="container p-5">
+      <h1 class="text-center pt-5">Boostrap Framework</h1>
+      <h2 class="pt-5">Exercice 1 : positionnement des blocs</h2>
+      <div class="container bg-info border border-dark rounded-lg">
+        <div class="row">
+          <div class="col-12 bg-info text-center pt-1 pb-1">
+            12 colonnes
+          </div>
+          <div
+            class="col-2 offset-1 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+          >
+            Coucou
+          </div>
+          <div
+            class="col-3 offset-2 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+          >
+            ça
+          </div>
+          <div
+            class="col-2 offset-2 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+          >
+            va ?
+          </div>
+        </div>
+      </div>
+
+      <h2 class="pt-5">Exercice 2 : éléments imbriqués</h2>
+      <div class="container">
+        <div class="row align-items-start">
+          <div
+            class="col-3 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+          >
+            nouvel
+          </div>
+          <div
+            class="col-9 bg-info border border-dark rounded-lg text-center pt-1"
+          >
+            Exercice
+            <div class="row">
+              <div
+                class="col-3 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                Ces
+              </div>
+              <div
+                class="col-6 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                blocs sont tous
+              </div>
+              <div
+                class="col-3 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                dans
+              </div>
+              <div
+                class="col-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                la même
+              </div>
+              <div
+                class="col-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                div où est
+              </div>
+              <div
+                class="col-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                inscrit "Exercice"
+              </div>
+              <div
+                class="col-5 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                Comment
+              </div>
+              <div
+                class="col-2 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                est
+              </div>
+              <div
+                class="col-5 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                ce possible ?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="pt-5">
+        Exercice 3 : changer l'ordre des éléments
+      </h2>
+
+      <div class="container bg-info border border-dark rounded-lg">
+        <div class="row">
+          <div class="col-12 bg-info text-center pt-1 pb-1">
+            12 colonnes
+          </div>
+          <div
+            class="col-2 offset-1 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+          >
+            Bloc 1 de 2
+          </div>
+          <div
+            class="col-2 offset-2 bg-info border border-dark rounded-lg text-center pt-1 pb-1 order-12"
+          >
+            Bloc 2 de 2
+          </div>
+          <div
+            class="col-2 offset-2 bg-info border border-dark rounded-lg text-center pt-1 pb-1 order-1"
+          >
+            Bloc 3 de 2
+          </div>
+        </div>
+      </div>
+
+      <h2 class="pt-5">
+        Exercice 4 : un avant-dernier pour la route
+      </h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6 bg-info border border-dark rounded-lg text-center">
+            12 colonnes
+            <div class="row">
+              <div
+                class="col-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                4 colonnes
+              </div>
+              <div
+                class="col-4 offset-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                4 colonnes
+              </div>
+            </div>
+          </div>
+          <div class="col-6 bg-info border border-dark rounded-lg text-center">
+            12 colonnes
+            <div class="row">
+              <div
+                class="col-4 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                4 colonnes
+              </div>
+              <div
+                class="col-8 bg-info border border-dark rounded-lg text-center pt-1 pb-1"
+              >
+                8 colonnes
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="pt-5">Exercice 5 : réalise un layout responsive</h2>
+      <div class="container-fluid rounded-lg">
+        <div class="row mx-md-n1">
+          <div class="col-xl-3 col-4 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Logo (1/4)</div>
+          </div>
+          <div class="col-xl-9 col-8 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Titre (3/4)</div>
+          </div>
+          <div class="col-xl-12 col-12 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Hero (1/1)</div>
+          </div>
+
+          <div class="col-xl-4 col-12 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Zone 1</div>
+          </div>
+          <div class="col-xl-4 col-12 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Zone 2</div>
+          </div>
+          <div class="col-xl-4 col-12 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Zone 3</div>
+          </div>
+          <div class="col-xl-6 col-8 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Zone 5(1/2)</div>
+          </div>
+          <div class="col-xl-6 col-4 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Zone 6(1/2)</div>
+          </div>
+          <div class="col-xl-12 col-12 px-xl-2 px-1 text-center">
+            <div class="p-3 mb-3 border bg-light">Footer</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="pt-5">
+        Exercice 6 : un formulaire responsive
+      </h2>
+
+      <form action="">
+        <div class="form-group">
+          <label for="nom"> Nom </label>
+          <input type="text" class="form-control" id="nom" placeholder="Doe" />
+        </div>
+        <div class="form-group">
+          <label for="Prénom"> Prénom </label>
+          <input
+            type="text"
+            class="form-control"
+            id="Prénom"
+            placeholder="John"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="e-mail"> Email adress </label>
+          <input
+            type="email"
+            class="form-control"
+            id="e-mail"
+            placeholder="John@doe.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="sujet"> Sujet </label>
+          <select class="form-control" name="" id="sujet">
+            <option value="">option 1</option>
+            <option value="">option 2</option>
+            <option value="">option 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message"> Message </label>
+          <textarea
+            class="form-control"
+            name=""
+            id="message"
+            placeholder="message"
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-primary btn-lg">
+          Envoyer
+        </button>
+      </form>
+
+      <h2 class="pt-5">
+        Exercice 7 : Carousel
+      </h2>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
